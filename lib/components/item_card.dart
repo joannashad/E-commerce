@@ -1,5 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/components/Product.dart';
 
 import '../../../constants.dart';
 
@@ -44,6 +46,9 @@ class ItemCard extends StatelessWidget {
               style: TextStyle(color: kTextLightColor),
             ),
           ),
+          Text(
+              "Price\n",
+          style: TextStyle(color: kTextLightColor,fontSize: 10),),
           Text(
             "\$${product.price}",
             style: TextStyle(fontWeight: FontWeight.bold),

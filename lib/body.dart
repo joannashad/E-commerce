@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/constants.dart';
-import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/components/Product.dart';
 
-import 'add_to_cart.dart';
-import 'color_and_size.dart';
-import 'counter_with_fav_btn.dart';
-import 'description.dart';
-import 'product_title_with_image.dart';
+import 'package:shop_app/components/add_to_cart.dart';
+import 'package:shop_app/components/color_and_size.dart';
+import 'package:shop_app/components/counter_with_fav_btn.dart';
+import 'package:shop_app/components/description.dart';
+import 'package:shop_app/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -20,6 +20,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SizedBox(
+            //width: size.width,
             height: size.height,
             child: Stack(
               children: <Widget>[

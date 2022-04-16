@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/constants.dart';
-import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/screens/details/details_screen.dart';
+import 'package:shop_app/components/Product.dart';
+import 'package:shop_app/components/details_screen.dart';
 
 import 'categorries.dart';
 import 'item_card.dart';
 
-class Body extends StatelessWidget {
+class BodyComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
           child: Text(
-            "Women",
+            "Corzic Music",
             style: Theme.of(context)
                 .textTheme
                 .headline5

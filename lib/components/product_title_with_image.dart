@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/components/Product.dart';
 
 import '../../../constants.dart';
 
@@ -19,7 +19,7 @@ class ProductTitleWithImage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            "Aristocratic Hand Bag",
+            "Electric Guitars",
             style: TextStyle(color: Colors.white),
           ),
           Text(
@@ -29,7 +29,7 @@ class ProductTitleWithImage extends StatelessWidget {
                 .headline4
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: kDefaultPaddin),
+          SizedBox(height: 0),
           Row(
             children: <Widget>[
               RichText(
@@ -50,7 +50,8 @@ class ProductTitleWithImage extends StatelessWidget {
                   tag: "${product.id}",
                   child: Image.asset(
                     product.image,
-                    fit: BoxFit.fill,
+                    height: 250,
+                    //fit: BoxFit.fill,
                   ),
                 ),
               )
